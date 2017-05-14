@@ -1,3 +1,7 @@
+/****************************************
+***********GLOBAL STYLES**********/
+
+
 * {
   box-sizing: border-box;
   color: white;
@@ -16,7 +20,9 @@ title {
 
 h1 {
   font-size: 1em;
-  margin: 0;
+}
+h2 {
+  display: inline-block;
 }
 
 
@@ -44,7 +50,6 @@ li {
   justify-content: center;
 }
 
-
 footer p,
 footer h3 {
   color: black;
@@ -52,13 +57,25 @@ footer h3 {
 }
 
 footer {
-  background-image: url("../img/imagesBG.png");
+  background-image: url("../img/background12min.jpg");
   opacity: 0.9;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
 }
 
 
+/****************************************
+***********MOBILE FIRST CLASSES**********/
+
+.fa-info:hover {
+  cursor:cell;
+}
+
+.learn-view {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 /**********FULLSCREEN NAV STYLES **********/
 /* The Overlay (background) */
 .overlay {
@@ -94,6 +111,19 @@ footer {
     transition: 0.3s; /* Transition effects on hover (color) */
 }
 
+/* The h3 text inside the Projects Info overlays */
+.overlay h3 {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 2em;
+    width:60%;
+    margin: auto;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+}
+
 /* When you mouse over the navigation links, change their color */
 .overlay a:hover, .overlay a:focus {
     color: #f1f1f1;
@@ -106,123 +136,6 @@ footer {
     right: 35px;
     font-size: 40px;
 }
-
-
-#header-banner {
-  background-image: url("../img/header-banner-brain.svg") ;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: auto;
-  height: 40vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-#header-menu {
-  display: flex;
-  flex: row;
-  justify-content: space-between;
-}
-
-#menu-container{
-  width: 100%;
-  position: fixed;
-  top: 0;
-  z-index: 9999;
-  left: 5px;
-}
-
-#nav-container{
-  position: relative;
-  padding: none;
-  margin: 0 0 0 .5em;
-  overflow: hidden;
-  float: left;
-  background-color: black;
-  border: black;
-  border-radius: 5%;
-}
-
-#nav-container img {
-  width: 3em;
-  height: 4em;
-}
-
-#tag-header-container{
-  margin: 0 0 1em 1em;
-}
-
-#tag-line,
-#header-name {
-    text-align: left !important;
-}
-
-#about-summary {
-  color:black;
-  font-size: 1.5em;
-  margin: 1em auto;
-}
-
-#main-content {
-  clear:both;
-  display: block;
-  width: 95%;
-  margin: 0 auto;
-}
-
-
-
-#page-container {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-}
-
-
-#projects {
-  background: black;
-
-}
-
-#CodeReview {
-  background: linear-gradient(#000, transparent 90%),
-              linear-gradient(0deg, #000, transparent 90%),
-              #000 url('../img/CodeReviewM.png') no-repeat center;
-  background-size: cover;
-}
-
-#Corgi-SVG {
-  background: linear-gradient(#000, transparent 90%),
-              linear-gradient(0deg, #000, transparent 90%),
-              #000 url('../img/CorgiSVDM.png') no-repeat center;
-  background-size: cover;
-
-}
-
-#GalleryKMA{
-  background: linear-gradient(#000, transparent 90%),
-              linear-gradient(0deg, #000, transparent 90%),
-              #000 url('../img/GalleryDeKMAM.png') no-repeat center;
-  background-size: cover;
-
-}
-
-#KevApp{
-  background: linear-gradient(#000, transparent 90%),
-              linear-gradient(0deg, #000, transparent 90%),
-              #000 url('../img/KevAppM.png') no-repeat center;
-  background-size: cover;
-
-}
-
-#contact-container{
-  display:flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-
 
 
 .projects-each {
@@ -263,10 +176,137 @@ footer {
     *zoom: 1;
 }
 
+/****************************************
+***********MOBILE FIST IDS**********/
+
+
+#header-banner {
+  background-image: url("../img/header-banner-brain.svg") ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: auto;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+#header-menu {
+  display: flex;
+  flex: row;
+  justify-content: space-between;
+}
+
+#menu-container{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  left: 5px;
+}
+
+#nav-container{
+  position: relative;
+  padding: none;
+  margin: 0 0 0 .5em;
+  overflow: hidden;
+  float: left;
+  background-color: black;
+  border: black;
+  border-radius: 5%;
+}
+
+#nav-container img {
+  width: 3em;
+  height: 4em;
+}
+
+#tag-header-container{
+  left: 1em;
+  margin-left: 1.5em;
+  text-align: left;
+}
+
+#tag-line,
+#header-name {
+  display: inline;
+  background: black;
+  margin: 1em 0;
+}
+
+#about-summary {
+  color:black;
+  font-size: 1.5em;
+  margin: 1em auto;
+}
+
+#main-content {
+  clear:both;
+  display: block;
+  width: 95%;
+  margin: 0 auto;
+}
+
+#page-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+#projects {
+  border-top: black 1px solid;
+  color: black;
+  height: 2em;
+  padding-top: 1em;
+  width: 95%;
+}
+
+#CodeReview {
+  background: linear-gradient(#000, transparent 90%),
+              linear-gradient(0deg, #000, transparent 90%),
+              #000 url('../img/CodeReviewM.png') no-repeat center;
+  background-size: cover;
+}
+
+#Corgi-SVG {
+  background: linear-gradient(#000, transparent 90%),
+              linear-gradient(0deg, #000, transparent 90%),
+              #000 url('../img/CorgiSVDM.png') no-repeat center;
+  background-size: cover;
+}
+
+#GalleryKMA{
+  background: linear-gradient(#000, transparent 90%),
+              linear-gradient(0deg, #000, transparent 90%),
+              #000 url('../img/GalleryDeKMAM.png') no-repeat center;
+  background-size: cover;
+}
+
+#KevApp{
+  background: linear-gradient(#000, transparent 90%),
+              linear-gradient(0deg, #000, transparent 90%),
+              #000 url('../img/KevAppM.png') no-repeat center;
+  background-size: cover;
+}
+
+#contact-container{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+
+
+
+/****************************************
+***********MEDIA QUERY TABLET**********/
+
 @media (min-width: 768px) {
 
-  /**********FULLSCREEN NAV STYLES **********/
-  /* The Overlay (background) */
+    /**********FULLSCREEN NAV STYLES **********/
+    /* The Overlay (background) */
 
   .overlay a {font-size: 36px}
     .overlay .closebtn {
@@ -275,27 +315,9 @@ footer {
         right: 45px;
     }
 
-#header-banner{
-    height: 60vh;
-}
 
-  #tag-line,
-  #header-name {
-      background: transparent !important;
-
-  }
-
-  #about-summary {
-    width: 50%;
-    text-align: justify;
-  }
-  #project-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    justify-content: space-around;
-    align-items: stretch;
+  .project-description {
+    font-size: 1.25em;
   }
 
   .projects-each {
@@ -305,27 +327,9 @@ footer {
     margin: 1em;;
   }
 
-}
-@media (min-width: 1024px) {
-
-
-
-.contact-icons {
-transition: all 0.5s ease-in-out;
-
-}
-
-.contact-icons:hover {
-transform:  scale(1.3);
-
-
-}
-  .projects-each {
-    height: 30em;
-  }
-
   .project-description{
     transition: all 1s ease-in-out;
+    font-size: 1.5em;
   }
   .project-description:hover {
     transform: skewX(10deg) scale(1.2);
@@ -333,19 +337,68 @@ transform:  scale(1.3);
     opacity: .8;
     border-radius: 5%;
     padding: 1em;
+  }
 
+  #header-banner{
+      height: 60vh;
+  }
+
+  #about-summary {
+    width: 50%;
+    text-align: justify;
+  }
+
+  #project-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: space-around;
+    align-items: stretch;
+  }
+}
+
+/****************************************
+***********MEDIA QUERY DESKTOP**********/
+
+
+
+@media (min-width: 1024px) {
+
+  .contact-icons {
+  transition: all 0.5s ease-in-out;
+  }
+
+  .contact-icons:hover {
+  transform:  scale(1.3);
+  }
+
+  .projects-each {
+    height: 30em;
   }
 
 
   #header-banner{
-      height: 80vh;
+      height: 75vh;
+  }
+
+  #tag-line,
+  #header-name {
+    font-size: 1.5em;
   }
 
   #about-summary {
-    margin: 2em auto;
+    margin: 1.5em auto;
     line-height: 1.5em;
+    font-size: 2em;
   }
 
+
+  #projects {
+    font-size: 2em;
+  }
+
+/***********Projects************/
 
   #CodeReview {
     background:linear-gradient(#000, transparent 90%),
@@ -374,7 +427,5 @@ transform:  scale(1.3);
                 #000 url('../img/KevAppTDr.jpg') no-repeat center;
                   background-size: cover;
   }
-
-
 
 }
