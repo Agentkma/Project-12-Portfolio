@@ -6,6 +6,7 @@
     <title>Project 12 Portfolio</title>
     <link href="https://fonts.googleapis.com/css?family=Arsenal" rel="stylesheet" type='text/css'>
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.min.css">
     <link rel="stylesheet" media="screen" href="css/style.css">
 
   </head>
@@ -17,7 +18,7 @@
         <div id="header-menu">
 
             <div id="menu-container">
-              <button  role="navigation" id="nav-container"><img src="img/menu-icon-min.png">
+              <button   id="nav-container"><img alt="menu icon button" src="img/menu-icon-min.png">
 
                 <!-- <a href="#main-content" > PROJECTS </a>
                 <a href="#contact" > CONTACT </a> -->
@@ -49,6 +50,11 @@
 
             <h1 id="header-name"> KEVIN <br>
             ANDERSON </h1>
+
+            <h4 id="header-learn-more"> Learn More  <br>
+              <i class="fa fa-angle-down" aria-hidden="true"></i>
+            </h4>
+
           <!-- END TAG-HEADER-CONTAINER -->
           </div>
       </header>
@@ -56,14 +62,34 @@
 
       <main role="main" id= "main-content">
 
-        <section role="article" >
+        <section >
           <p id="about-summary"> Endeavoring to build solutions that exceed expectations & create an engaging & memorable experience.
           </p>
+          <p id="about-learn-more"> Learn More
+            <i class="fa fa-info" aria-hidden="true"></i>
+          </p>
+
+          <div id="about-skills">
+            <div class = "skills-each">
+              <img>
+              <h2 class="skills">Current Skills</h2>
+              <p>I can design and create Mobile First and Accessible projects in the browser via HTML(5), CSS(3), and JavaScript.  I can employ SASS, jQuery, Gulp Build Pipelines, and GitHub to augment and streamline projects.</p>
+            </div>
+
+            <div class = "skills-each">
+              <img>
+              <h2 class="skills">Future Skills</h2>
+              <p> I am attending Galvanize (Denver) Full Stack Web Dev Immersive starting in July '17.  This will build on my Team Treehouse Front End Techdegree.  I also plan to learn iOS Swift mobile app development after I complete the Galvanize course.  </p>
+            </div>
+          </div>
         </section>
 
         <h2 id="projects"> PROJECTS </h2>
         <div >
           <ul id="project-container">
+
+            <!-- THE CODE REV PROJECT  -->
+
             <li class="projects-each"  id="CodeReview" >
               <!-- The overlay -->
               <div id="code-review" class="overlay">
@@ -73,7 +99,7 @@
 
                   <!-- Overlay content -->
                   <div class="overlay-content">
-                    <h3> Tech Code Used:  HTML5, CSS3. <br>
+                    <h3> Tech Code Used:<br>  HTML5, CSS3. <br>
                          The project focuses on using modern HTML5 form elements with a mobile first design.</h3>
                   </div>
 
@@ -83,7 +109,7 @@
               <div class= "project-description">
 
                   <h3>The Code Review </h3>
-                  <p>HTML5,CSS3: forms & mobile first</p>
+                  <p>HTML5,CSS3: <br>Forms & mobile first</p>
                   <div class="learn-view">
                       <h2 id="code-review-i"><span class="fa fa-info fa-2x" aria-hidden="true"></span></h2>
                       <a target="_blank" href="https://agentkma.github.io/Project-3-registration-form/">
@@ -94,6 +120,8 @@
               </div>
             </li>
 
+
+            <!-- THE CORGI SVG PROJECT  -->
             <li class="projects-each" id="Corgi-SVG">
 
               <!-- The overlay -->
@@ -104,8 +132,8 @@
 
                   <!-- Overlay content -->
                   <div class="overlay-content">
-                    <h3> Tech Code Used:  HTML5, CSS3. <br>
-                         The project focuses on using inline svg images for simple images, icons, and backgrounds.<br>  It also incorporates CSS3 hover effects on nav icons. </h3>
+                    <h3> Tech Code Used:  <br>HTML5, CSS3. <br>
+                         The project focuses replacing raster images with scalable vector graphics for simple images, icons, and backgrounds.<br>  It also incorporates CSS3 hover effects on nav icons. </h3>
                   </div>
 
               <!-- END OVERLAY CONTAINER -->
@@ -113,7 +141,7 @@
               <div class= "project-description">
 
                   <h3>Corgi SVG </h3>
-                  <p>HTML5,CSS3: with inline SVG</p>
+                  <p>HTML5,CSS3: <br>Inline SVG</p>
                   <div class="learn-view">
                       <h2 id="corgi-svg-i"><span class="fa fa-info fa-2x" aria-hidden="true"></span></h2>
                       <a target="_blank" href="https://agentkma.github.io/Project-6-SVG-Update/">
@@ -124,24 +152,127 @@
               </div>
             </li>
 
+            <!-- THE GALLERY DE KMA PROJECT  -->
             <li class="projects-each" id="GalleryKMA">
 
+              <!-- The overlay -->
+              <div id="gallery-kma" class="overlay">
+
+              <!-- Button to close the overlay navigation -->
+                  <a href="javascript:void(0)" class="closebtn">&times;</a>
+
+                  <!-- Overlay content -->
+                  <div class="overlay-content">
+                    <h3> Tech Code Used: HTML5, CSS3, JavaScript. <br>
+                         The project focuses on using JavaScript to create searchable content and using a lightbox to display and navigagte the content<br>  It also incorporates responsive design </h3>
+                  </div>
+
+              <!-- END OVERLAY CONTAINER -->
+              </div>
+
               <div class= "project-description">
-                <a target="_blank" href="https://agentkma.github.io/master-Project-4/">
                   <h3>Gallery de KMA </h3>
-                  <p>JavaScript: Searchable photo gallery with lightbox</p>
-                </a>
+                  <p>HTML5,CSS3,JavaScript: <br>Searchable photo gallery</p>
+                  <div class="learn-view">
+                      <h2 id="gallery-kma-i"><span class="fa fa-info fa-2x" aria-hidden="true"></span></h2>
+                        <a target="_blank" href="https://agentkma.github.io/master-Project-4/">
+                        <h2><span class="fa fa-eye fa-2x" aria-hidden="true"></span></h2>
+                      </a>
+
+                  </div>
               </div>
             </li>
 
+            <!-- THE KEV APP PROJECT  -->
             <li class="projects-each" id="KevApp">
+
+              <!-- The overlay -->
+              <div id="kev-app" class="overlay">
+
+              <!-- Button to close the overlay navigation -->
+                  <a href="javascript:void(0)" class="closebtn">&times;</a>
+
+                  <!-- Overlay content -->
+                  <div class="overlay-content">
+                    <h3> Tech Code Used:  HTML5, CSS3, JavaScript. <br>
+                         The project focuses on using JavaScript and ChartJS plugin to create a mobile first application.<br>  It also incorporates form elements and CSS3 effects. </h3>
+                  </div>
+
+              <!-- END OVERLAY CONTAINER -->
+              </div>
             <div class= "project-description">
-              <a target="_blank" href="https://agentkma.github.io/Project-9-Web-App-Dashboard/">
+
                 <h3>KevApp</h3>
-                <p>JavaScript with Plug-Ins: Mobile friendly web app</p>
-              </a>
+                <p>HTML5,CSS3,JavaScript:<br> Mobile friendly web app</p>
+                <div class="learn-view">
+                    <h2 id="kev-app-i"><span class="fa fa-info fa-2x" aria-hidden="true"></span></h2>
+                      <a target="_blank" href="https://agentkma.github.io/Project-9-Web-App-Dashboard/">
+                      <h2><span class="fa fa-eye fa-2x" aria-hidden="true"></span></h2>
+                    </a>
+                </div>
             </div>
           </li>
+
+          <!-- THE CUSTOM VIDEO PLAYER PROJECT  -->
+          <li class="projects-each" id="CustomVideo">
+
+            <!-- The overlay -->
+            <div id="custom-video" class="overlay">
+
+            <!-- Button to close the overlay navigation -->
+                <a href="javascript:void(0)" class="closebtn">&times;</a>
+
+                <!-- Overlay content -->
+                <div class="overlay-content">
+                  <h3> Tech Code Used:  HTML5, CSS3, JavaScript. <br>
+                       The project focuses on using JavaScript to create a mobile first video player with custom controls.<br>  It also incorporates accessiblity features such as closed captioning and an active transcript. </h3>
+                </div>
+
+            <!-- END OVERLAY CONTAINER -->
+            </div>
+          <div class= "project-description">
+
+              <h3>Custom Video Player</h3>
+              <p>HTML5,CSS3,JavaScript: <br>Custom controls & Accessible </p>
+              <div class="learn-view">
+                  <h2 id="custom-video-i"><span class="fa fa-info fa-2x" aria-hidden="true"></span></h2>
+                    <a target="_blank" href="">
+                      <h2><span class="fa fa-eye fa-2x" aria-hidden="true"></span></h2>
+                    </a>
+              </div>
+          </div>
+        </li>
+
+        <!-- THE CSS TO SASS PROJECT  -->
+        <li class="projects-each" id="CSStoSASS">
+
+          <!-- The overlay -->
+          <div id="css-to-sass" class="overlay">
+
+          <!-- Button to close the overlay navigation -->
+              <a href="javascript:void(0)" class="closebtn">&times;</a>
+
+              <!-- Overlay content -->
+              <div class="overlay-content">
+                <h3> Tech Code Used:  HTML5, CSS3, JavaScript. <br>
+                     The project focuses on using refactoring a site to use SASS to compile CSS.<br>  It also incorporates CSS3 hover effects using a mobile first design. </h3>
+              </div>
+
+          <!-- END OVERLAY CONTAINER -->
+          </div>
+        <div class= "project-description">
+
+            <h3>CSS to SASS</h3>
+            <p>HTML5,SASS to CSS3,JavaScript:<br>Refactoring via SASS compiler </p>
+            <div class="learn-view">
+                <h2 id="css-to-sass-i"><span class="fa fa-info fa-2x" aria-hidden="true"></span></h2>
+                  <a target="_blank" href="">
+                    <h2><span class="fa fa-eye fa-2x" aria-hidden="true"></span></h2>
+                  </a>
+            </div>
+        </div>
+      </li>
+
         </ul>
         <!-- END PROJECT-CONTAINER -->
       </div>
@@ -253,6 +384,7 @@
  src="https://code.jquery.com/jquery-3.2.1.min.js"
  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
  crossorigin="anonymous"></script>
+    <script src="jquery-ui/jquery-ui.min.js"></script>
     <script src='script.js'> </script>
     </body>
 
