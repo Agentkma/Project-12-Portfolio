@@ -76,6 +76,23 @@ footer {
   flex-direction: row;
   justify-content: space-around;
 }
+
+.skills-each {
+  width: 90%;
+  margin: 0 auto;
+  padding: 1em;
+  font-size: 1.5em;
+  line-height: 1.25em;
+  text-align: justify;
+}
+
+.skills {
+  color: black;
+  margin: 1em auto;
+  display: block;
+}
+
+
 /**********FULLSCREEN NAV STYLES **********/
 /* The Overlay (background) */
 .overlay {
@@ -139,7 +156,7 @@ footer {
 
 
 .projects-each {
-  height: 10em;
+  height: 15em;
   width: 100%;
   margin: 1em auto;
   border-radius: 2.5%;
@@ -147,6 +164,7 @@ footer {
 
 .project-description{
   margin:  auto 0;
+
 }
 
 /**
@@ -230,16 +248,47 @@ footer {
 
 #tag-line,
 #header-name {
-  display: inline;
+  display: inline-block;
   background: black;
-  margin: 1em 0;
+  margin: 0;
+  padding: .25em 0;
+  text-align: left;
 }
+
+#header-learn-more{
+  background: black;
+  display:block;
+  width:7em;
+  margin: 0 auto;
+  font-weight: lighter;
+  display: none;
+  cursor: cell;
+
+}
+
+
 
 #about-summary {
   color:black;
   font-size: 1.5em;
   margin: 1em auto;
+
 }
+
+#about-learn-more {
+  background: black;
+  display: inline-block;
+  padding: 1em;
+  border-radius: 5%;
+}
+
+
+
+#about-skills p{
+  color: black;
+}
+
+
 
 #main-content {
   clear:both;
@@ -289,6 +338,26 @@ footer {
               #000 url('../img/KevAppM.png') no-repeat center;
   background-size: cover;
 }
+
+#CustomVideo{
+  background: linear-gradient(#000, transparent 90%),
+              linear-gradient(0deg, #000, transparent 90%),
+              #000 url('../img/VideoPlayerM.png') no-repeat center;
+  background-size: cover;
+}
+
+#CSStoSASS{
+  background: linear-gradient(#000, transparent 90%),
+              linear-gradient(0deg, #000, transparent 90%),
+              #000 url('../img/CSStoSassM.png') no-repeat center;
+  background-size: cover;
+}
+
+
+
+
+
+
 
 #contact-container{
   display:flex;
@@ -348,6 +417,15 @@ footer {
     text-align: justify;
   }
 
+  #about-skills {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+
+
   #project-container {
     display: flex;
     flex-direction: row;
@@ -379,13 +457,20 @@ footer {
 
 
   #header-banner{
-      height: 75vh;
+      height: 100vh;
   }
 
   #tag-line,
   #header-name {
     font-size: 1.5em;
   }
+
+  #header-learn-more {
+    display:inherit;
+  }
+
+
+
 
   #about-summary {
     margin: 1.5em auto;
@@ -427,5 +512,19 @@ footer {
                 #000 url('../img/KevAppTDr.jpg') no-repeat center;
                   background-size: cover;
   }
+
+#CustomVideo{
+  background:linear-gradient(#000, transparent 90%),
+              linear-gradient(0deg, #000, transparent 90%),
+              #000 url('../img/VideoPlayerTD.png') no-repeat center;
+                background-size: cover;
+}
+
+#CSStoSASS{
+  background:linear-gradient(#000, transparent 90%),
+              linear-gradient(0deg, #000, transparent 90%),
+              #000 url('../img/CSStoSASSTD.png') no-repeat center;
+                background-size: cover;
+}
 
 }
