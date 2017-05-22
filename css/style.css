@@ -37,6 +37,11 @@ nav>a{
   border: 1px solid white;
 }
 
+section {
+  width: 100%;
+  margin: auto;
+}
+
 ul {
   margin: 0 auto;
   list-style: none;
@@ -56,11 +61,16 @@ footer h3 {
   overflow: hidden;
 }
 
+
+
+section,
 footer {
   background-image: url("../img/background12min.jpg");
   opacity: 0.9;
   background-position: center;
   background-size: contain;
+  padding: 1em;
+
 }
 
 
@@ -90,6 +100,7 @@ footer {
   color: black;
   margin: 1em auto;
   display: block;
+
 }
 
 
@@ -107,6 +118,7 @@ footer {
     background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
     overflow-x: hidden; /* Disable horizontal scroll */
     transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+    z-index: 2000;
 }
 
 /* Position the content inside the overlay */
@@ -160,6 +172,7 @@ footer {
   width: 100%;
   margin: 1em auto;
   border-radius: 2.5%;
+  /*z-index: 1000;*/
 }
 
 .project-description{
@@ -196,10 +209,23 @@ footer {
 
 /****************************************
 ***********MOBILE FIST IDS**********/
+#main-content {
+  clear:both;
+  display: block;
+  width: 95%;
+  margin: 0 auto;
+  padding-bottom: 4em;
+}
 
+#page-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  background: linear-gradient( 0deg, #fff, #bab8b8);
+}
 
 #header-banner {
-  background-image: url("../img/header-banner-brain.svg") ;
+  background-image: url("../img/header-banner-brain-MIN.svg") ;
   background-repeat: no-repeat;
   background-size: cover;
   width: auto;
@@ -207,6 +233,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
 
 }
 
@@ -217,7 +244,7 @@ footer {
 }
 
 #menu-container{
-  width: 100%;
+  width: 20%;
   position: fixed;
   top: 0;
   z-index: 9999;
@@ -238,6 +265,8 @@ footer {
 #nav-container img {
   width: 3em;
   height: 4em;
+  border: none;
+
 }
 
 #tag-header-container{
@@ -286,29 +315,25 @@ footer {
 
 #about-skills p{
   color: black;
+
 }
 
 
-
-#main-content {
-  clear:both;
-  display: block;
-  width: 95%;
-  margin: 0 auto;
+#project-container{
+  width: 90%;
 }
 
-#page-container {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-}
 
 #projects {
-  border-top: black 1px solid;
+  /*border-top: black 1px solid;*/
   color: black;
-  height: 2em;
-  padding-top: 1em;
+  height: 4em;
+  padding-top: 2em;
   width: 95%;
+  margin-top: 0;
+  text-shadow: -5px -5px 10px gray;
+  font-size: 2em;
+
 }
 
 #CodeReview {
@@ -356,9 +381,6 @@ footer {
 
 
 
-
-
-
 #contact-container{
   display:flex;
   flex-direction: row;
@@ -390,10 +412,10 @@ footer {
   }
 
   .projects-each {
-    height: 20em;
-    width: 45%;
-    max-width: 1000px;
-    margin: 1em;;
+    height: 15em;
+    width: 42.5%;
+    /*max-width: 1000px;*/
+    margin: 1em;
   }
 
   .project-description{
@@ -408,8 +430,17 @@ footer {
     padding: 1em;
   }
 
-  #header-banner{
-      height: 60vh;
+
+  #header-banner {
+    background-image: url("../img/header-banner-brain-MIN.svg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
   }
 
   #about-summary {
@@ -418,7 +449,6 @@ footer {
   }
 
   #about-skills {
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -427,6 +457,7 @@ footer {
 
 
   #project-container {
+    width: 85%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -452,7 +483,8 @@ footer {
   }
 
   .projects-each {
-    height: 30em;
+    height: 17.5em;
+    width: 27.5%;
   }
 
 
@@ -478,10 +510,15 @@ footer {
     font-size: 2em;
   }
 
+  #project-container{
+    width: 80%;
+  }
 
   #projects {
-    font-size: 2em;
+    font-size: 3em;
   }
+
+
 
 /***********Projects************/
 

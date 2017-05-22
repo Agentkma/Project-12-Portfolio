@@ -44,7 +44,7 @@ $('#header-learn-more').click( function () {
 
     $('html, body').animate({
     scrollTop: $("#about-summary").offset().top
-    }, 1000);
+  }, 1000);
 
 
 });
@@ -56,7 +56,7 @@ $('#about-skills').hide();
 $('#about-learn-more').click( function () {
     $('#about-summary').toggle('explode');
     $('#about-learn-more').hide();
-    $('#about-skills').fadeIn(2000);
+    $('#about-skills').fadeIn(3000);
 });
 
 
