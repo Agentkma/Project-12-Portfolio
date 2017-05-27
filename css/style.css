@@ -234,7 +234,6 @@ footer {
   flex-direction: column;
   justify-content: space-between;
 
-
 }
 
 #header-menu {
@@ -292,16 +291,12 @@ footer {
   font-weight: lighter;
   display: none;
   cursor: cell;
-
 }
-
-
 
 #about-summary {
   color:black;
   font-size: 1.5em;
   margin: 1em auto;
-
 }
 
 #about-learn-more {
@@ -312,10 +307,8 @@ footer {
 }
 
 
-
 #about-skills p{
   color: black;
-
 }
 
 
@@ -325,13 +318,13 @@ footer {
 
 
 #projects {
-  /*border-top: black 1px solid;*/
+  border-bottom: black 1px solid;
   color: black;
   height: 4em;
   padding-top: 2em;
   width: 95%;
   margin-top: 0;
-  text-shadow: -5px -5px 10px gray;
+  /*text-shadow: -5px -5px 10px gray;*/
   font-size: 2em;
 
 }
@@ -440,7 +433,6 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
   }
 
   #about-summary {
