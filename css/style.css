@@ -199,13 +199,7 @@ footer {
     clear: both;
 }
 
-/**
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
-.cf {
-    *zoom: 1;
-}
+
 
 /****************************************
 ***********MOBILE FIST IDS**********/
@@ -233,12 +227,11 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
 }
 
 #header-menu {
   display: flex;
-  flex: row;
+  flex-direction: row;
   justify-content: space-between;
 }
 
@@ -252,7 +245,7 @@ footer {
 
 #nav-container{
   position: relative;
-  padding: none;
+  padding: 0;
   margin: 0 0 0 .5em;
   overflow: hidden;
   float: left;
@@ -265,7 +258,6 @@ footer {
   width: 3em;
   height: 4em;
   border: none;
-
 }
 
 #tag-header-container{
@@ -306,16 +298,13 @@ footer {
   border-radius: 5%;
 }
 
-
 #about-skills p{
   color: black;
 }
 
-
 #project-container{
   width: 90%;
 }
-
 
 #projects {
   border-bottom: black 1px solid;
@@ -324,9 +313,7 @@ footer {
   padding-top: 2em;
   width: 95%;
   margin-top: 0;
-  /*text-shadow: -5px -5px 10px gray;*/
   font-size: 2em;
-
 }
 
 #CodeReview {
@@ -373,7 +360,6 @@ footer {
 
 
 
-
 #contact-container{
   display:flex;
   flex-direction: row;
@@ -407,7 +393,6 @@ footer {
   .projects-each {
     height: 15em;
     width: 42.5%;
-    /*max-width: 1000px;*/
     margin: 1em;
   }
 
@@ -494,8 +479,6 @@ footer {
   }
 
 
-
-
   #about-summary {
     margin: 1.5em auto;
     line-height: 1.5em;
@@ -542,18 +525,18 @@ footer {
                   background-size: cover;
   }
 
-#CustomVideo{
-  background:linear-gradient(#000, transparent 90%),
-              linear-gradient(0deg, #000, transparent 90%),
-              #000 url('../img/VideoPlayerTD.png') no-repeat center;
-                background-size: cover;
-}
+    #CustomVideo{
+      background:linear-gradient(#000, transparent 90%),
+                  linear-gradient(0deg, #000, transparent 90%),
+                  #000 url('../img/VideoPlayerTD.png') no-repeat center;
+                    background-size: cover;
+    }
 
-#CSStoSASS{
-  background:linear-gradient(#000, transparent 90%),
-              linear-gradient(0deg, #000, transparent 90%),
-              #000 url('../img/CSStoSASSTD.png') no-repeat center;
-                background-size: cover;
-}
+    #CSStoSASS{
+      background:linear-gradient(#000, transparent 90%),
+                  linear-gradient(0deg, #000, transparent 90%),
+                  #000 url('../img/CSStoSASSTD.png') no-repeat center;
+                    background-size: cover;
+    }
 
 }
