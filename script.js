@@ -34,7 +34,7 @@ $(document).ready ( function () {
       $('#header-learn-more').hide().show("shake", { times: 2 }, {distance: 10},'1000' );
   });
 
-
+$('#header-banner').height(window.innerHeight + 'px');
 
 
 
